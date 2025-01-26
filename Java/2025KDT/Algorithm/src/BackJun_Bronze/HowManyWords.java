@@ -10,5 +10,6 @@ public class HowManyWords {
         String[] words = input.split("\\s+"); // 여러 공백을 기준으로 나누기
         System.out.println(words.length);
 
+
     }
 }
