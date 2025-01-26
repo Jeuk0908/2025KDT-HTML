@@ -1,4 +1,4 @@
-package BackJun_Bronze2;
+package BackJun_Bronze;
 
 import java.util.Scanner;
 
