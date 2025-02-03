@@ -94,9 +94,6 @@ public class Pokemon implements IPokemon {
 
 
 
-
-
-
 //        //체력 증가
 //        int newHP = this.getHP() + 5;
 //        //레벨변겅 this.setters()
