@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>조합선택자</title>
+  <style>
+    /* 여러 선택자를 조합해 디테이해지면, 선택실패, 무효한 선택자 발생 가능성 */
+    /* 그러나 미리 요구사항 정해져 있는 경우, 무효한 선택자더라도 미리 선택할 필요가 있음 */
+    #b.important1 {
+      color: red;
+    }
+
+    #h.important2 {
+      color: green;
+    }
+
+    .important1[special=true] {
+      font-weight: bold;
+    }
+
+    /* 무효한 선택자이지만, 요구사항에 따라 미리 지정해둠.*/
+    .important3[special=true] {
+      font-style: italic;
+    }
+
+    .important2.even {
+
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <!-- id 에는 숫자넣으면 인식 못한다 -->
+  <li id="a" special="true">1번째 아이템입니다.</li>
+  <li id="b" class="important1">2번째 아이템입니다.</li>
+  <li id="c" special="true">3번째 아이템입니다.</li>
+  <li id="d" class="important1">4번째 아이템입니다.</li>
+  <li id="e" special="true">5번째 아이템입니다.</li>
+  <li id="f" class="important1">6번째 아이템입니다.</li>
+  <li id="g" special="true">7번째 아이템입니다.</li>
+  <li id="h" class="important2 even">8번째 아이템입니다.</li>
+  <li id="i" special="true">9번째 아이템입니다.</li>
+  <li id="j" class="important2">10번째 아이템입니다.</li>
+</ul>
+</body>
+</html>

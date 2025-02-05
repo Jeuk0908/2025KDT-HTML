@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>여백제어하기</title>
+  <style>
+    .box {
+      margin: 10px;
+      padding: 10px;
+      width: 400px;
+      height: 400px;
+      background-color: rosybrown;
+    }
+
+    .box:first-child {
+      border: 5px dotted black;
+      /* 내부의 콘텐츠 영역을 줄이는 방식. 정해진 사이즈 엄수*/
+      box-sizing: border-box;
+    }
+
+    .box:last-child {
+      border: 5px dashed black;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">박스1</div>
+  <div class="box">박스2</div>
+  <div class="box">박스3</div>
+  <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur ea illum impedit, ipsa
+    nesciunt voluptate? Consequatur cum dolorum ipsa iste, magnam neque nesciunt nostrum pariatur quidem quisquam
+    reprehenderit rerum!
+  </div>
+</div>
+</body>
+</html>

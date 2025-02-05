@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5.자식선택자</title>
+  <style>
+    /* div 의 자식 관계인 ul 을 선택 */
+    div > ul {
+      font-weight: bold;
+    }
+
+    div > * {
+      font-family: "serif", "American Typewriter", "sans serif";
+    }
+
+    main > ul {
+      font-size: larger;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div>
+    <span>여기에는 볼드체 적용되지 않았음.</span>
+    <ul>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+    </ul>
+  </div>
+  <ul>
+    <ul>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+      <li>리스트항목</li>
+    </ul>
+  </ul>
+</main>
+</body>
+</html>

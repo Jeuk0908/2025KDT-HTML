@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>폼양식 연습</title>
+</head>
+<body>
+<form action="http://search.naver.com/search.naver">
+  검색어 입력 : <input type="text" name="query" placeholder="검색 또는 URL 입력"><br><br>
+  비밀번호 입력 : <input type="password" placeholder="비밀번호 입력"><br><br>
+  이메일 입력 : <input type="email" placeholder="이메일 형식 입력">
+
+
+  <h1>체크박스 옵션</h1>
+  <input type="checkbox" name="game" value="pokemon">포켓몬<br>
+  <input type="checkbox" name="game" value="동물의 숲">동물의 숲<br>
+  <input type="checkbox" name="game" value="콜오브듀티">콜오브듀티<br>
+  <input type="checkbox" name="game" value="배틀필드">배틀필드<br>
+
+
+  <h1>라디오 옵션</h1>
+  <input type="radio" name="sports" value="복싱">복싱<br>
+  <input type="radio" name="sports" value="골프">골프<br>
+  <input type="radio" name="sports" value="축구">축구<br>
+  <input type="radio" name="sports" value="사격">사격<br>
+
+  <h1>숫자 필드</h1>
+  <input type="number" min="1" max="100" value=""><br>
+  전화번호를 입력하세요 <input type="number" min="0" max="01099999999"><br>
+  <input type="range" min="1" max="100"><br>
+  전화번호를 입력하세요 <input id="num" type="range" min="0" max="99999999999"><br>
+
+  <h1>파일 업로드</h1>
+  <input type="file" accept="image">이미지파일<br>
+  <input type="file" accept="video">영상파일<br>
+
+  <h1>SELECT 태그로 드랍다운</h1>
+  <labe for="food">음식선택</labe>
+  <select name="food" id="food">
+    <option value="덮밥">덮밥</option>
+    <option value="초밥">초밥</option>
+    <option value="pasta">파스타</option>
+  </select>
+
+  <textarea name="textarea" placeholder="여기에 많은 양의 텍스트를 넣을 수 있습니다."></textarea>
+
+  <button>제출버튼</button>
+  <button type="reset">입력 초기화</button>
+
+</form>
+</body>
+</html>
