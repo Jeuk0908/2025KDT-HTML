@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>애니메이션 기초</title>
+  <style>
+    .animated {
+      width: 100px;
+      height: 100px;
+      background-color: #8914fb;
+      line-height: 100px;
+      text-align: center;
+      color: white;
+
+      /*메타몽이라는 이름으로 애니메이션 선언*/
+      animation-name: metamon;
+      /*재생 시간*/
+      animation-duration: 3s;
+      /*무한반복*/
+      animation-iteration-count: infinite;
+      /*끝까지 재생되면 역재생*/
+      animation-direction: alternate;
+    }
+
+    /*애니메이션 키프레임 선언*/
+    /* 재생되는 % 지정가능 */
+    /* 컷 전환 효과를 단계별 프레임으로 상세 정의 가능*/
+    @keyframes metamon {
+      0% {
+        width: 100px;
+        background-color: #8914fb;
+      }
+      20% {
+        width: 200px;
+        background-color: #6c7310;
+      }
+      40% {
+        width: 300px;
+        background-color: #c1c1c1;
+      }
+      60% {
+        width: 200px;
+        background-color: #794da6;
+      }
+      80% {
+        width: 150px;
+        background-color: #ce5656;
+      }
+      100% {
+        width: 100px;
+        background-color: #8914fb;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="animated">
+  ANIMATED
+</div>
+</body>
+</html>

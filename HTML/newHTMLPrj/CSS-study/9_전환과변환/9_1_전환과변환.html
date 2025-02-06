@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition : 전환 과 변환 </title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #ce5656;
+      margin: 10px;
+      text-align: center;
+      line-height: 200px;
+
+      /* 전환 Transition */
+      /*transition: background 0.3s, border-radius 0.3s;*/
+
+      /*모든 효과를, 5초에걸쳐, 5단계로, 1초 delay*/
+      transition: all 5s;
+
+    }
+
+    /*전환시에 어떤 효과를 적용할 것인지*/
+    .transition-box:hover {
+      border-radius: 10%;
+      background-color: #794da6;
+    }
+
+    /* transform. 변환은 움직임을 설정 (변환과 전환은 엄연히 다름)*/
+    /* transition = 형태 전환
+       transform = 동작 전환 */
+    .transform-box.box1:hover {
+      transform: rotate3d(-10, 0, 0, 360deg);
+    }
+
+    .transform-box.box2:hover {
+      /*좌상단 기준 좌표변경*/
+      transform: translate(200px, -200px);
+    }
+
+    .transform-box.box3:hover {
+      transform: scale(120%);
+    }
+
+    .transform-box.box4:hover {
+      transform: skew(20deg, 20deg);
+    }
+
+    .transform-box.box5:hover {
+
+    }
+  </style>
+</head>
+<body>
+<div class="transition-box"></div>
+<div class="transform-box box1">1</div>
+<div class="transform-box box2">2</div>
+<div class="transform-box box3">3</div>
+<div class="transform-box box4">4</div>
+<div class="transform-box box5">5</div>
+</body>
+</html>

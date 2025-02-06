@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float와Clear</title>
+  <style>
+    /* 블록요소는 행을 독점*/
+    /*float 으로 독점을 해제 가능*/
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #318535;
+      margin: 5px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .float-box {
+      /*float-box 끼리만 상호작용*/
+      float: left;
+    }
+
+    .fix-box {
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+<div class="float-box">1</div>
+<div class="float-box">2</div>
+<div class="float-box">3</div>
+<div class="float-box">4</div>
+<!--레이아웃 기법은 한 화면 내에서는 반드시! 일관적으로 작성하자-->
+<!--<div class="fix-box">fix1</div>  이 부분만 혼자 다른 기준으로 적용됨 -->
+<div class="float-box">5</div>
+<div class="float-box">6</div>
+<div class="float-box">7</div>
+<div class="float-box">8</div>
+<div class="float-box">9</div>
+<div class="float-box">10</div>
+<div class="float-box">11</div>
+<div class="float-box">12</div>
+</body>
+</html>
