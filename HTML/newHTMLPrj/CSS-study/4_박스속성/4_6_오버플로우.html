@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>6.오버플로우</title>
+  <style>
+
+    .img-box {
+      width: 456px;
+      height: 344px;
+      /* overflow 속성은 공간 점유가 부모요소를 초과 하게 만들 수 있다. */
+      /* 공간점유는 포함관계 에 따라 적용됨*/
+      overflow: auto;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+<div class="img-box">
+  <img src="/media/에펠탑.jpg" alt="에펠탑">
+</div>
+<div class="img-box">
+  <img src="/media/에펠탑.jpg" alt="에펠탑">
+</div>
+<div class="img-box">
+  <img src="/media/에펠탑.jpg" alt="에펠탑">
+</div>
+</body>
+</html>

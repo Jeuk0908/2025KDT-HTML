@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>절대단위와 상대단위</title>
+  <style>
+    /* px, pt, mm, cm, in */
+    #absolute1 {
+      font-size: 20px;
+    }
+
+    #absolute2 {
+      font-size: 20pt; /*0.35mm 정도*/
+    }
+
+    #absolute3 {
+      font-size: 7.056mm;
+    }
+
+    #absolute4 {
+      font-size: 0.7cm;
+    }
+
+    #absolute5 {
+      font-size: 0.28in;
+    }
+
+    .container {
+      font-size: 20px;
+    }
+
+    /* */
+    #relative1 {
+      /*상위 항목의 상대적인 상속*/
+      font-size: 1.5em;
+      /*30px  =>  20px 의 1.5배*/
+    }
+
+    #relative2 {
+      font-size: 1.5rem;
+    }
+
+    .box.vw {
+      width: 50vw;
+      background: #ce5656;
+
+    }
+
+    .box.vh {
+      width: 50vh;
+      background: #ce5656;
+
+    }
+
+  </style>
+</head>
+<body>
+<ul>
+  <li id="absolute1">1번째 절대단위 테스트 리스트 아이템 20px</li>
+  <li id="absolute2">2번째 절대단위 테스트 리스트 아이템 20pt</li>
+  <li id="absolute3">3번째 절대단위 테스트 리스트 아이템 7.056mm</li>
+  <li id="absolute4">4번째 절대단위 테스트 리스트 아이템 0.7cm</li>
+  <li id="absolute5">5번째 절대단위 테스트 리스트 아이템 0.28in</li>
+</ul>
+<div class="container">
+  <ul>
+    <li id="relative1">1번째 상대단위 테스트 리스트 아이템</li>
+    <li id="relative2">2번째 상대단위 테스트 리스트 아이템</li>
+    <li id="relative3">3번째 상대단위 테스트 리스트 아이템</li>
+    <li id="relative4">4번째 상대단위 테스트 리스트 아이템</li>
+    <li id="relative5">5번째 상대단위 테스트 리스트 아이템</li>
+  </ul>
+
+  <div class="box vw">vw : viewport기준 가로 길이 적용</div>
+  <div class="box vh">vh : viewport기준 세로 길이 적용</div>
+</div>
+
+</body>
+</html>

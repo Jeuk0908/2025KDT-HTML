@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Depth 제어</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+    }
+
+    .box1 {
+      /* z-index : 앞뒤 설정. 동일하면 나중에 지정한 요소가 우선됨*/
+      z-index: 0;
+      background-color: #e8e7e7;
+    }
+
+    .box2 {
+      z-index: 1;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      background-color: #6c7310;
+    }
+
+    .box3 {
+      z-index: 2;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      background-color: #7cafba;
+    }
+
+    .box4 {
+      z-index: 3;
+      top: 120px;
+      left: 120px;
+      background-color: #ce5656;
+    }
+
+    .box5 {
+      z-index: 4;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+      background-color: #794da6;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box box1">박스 1</div>
+  <div class="box box2">박스 2</div>
+  <div class="box box3">박스 3</div>
+  <div class="box box4">박스 4</div>
+  <div class="box box5">박스 5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fixed 포지션 : view port 의 이동을 따라감</title>
+  <style>
+
+    header {
+      /* fixed 사용하면, 기본값인 relative 벗어남*/
+      position: fixed;
+      top: 0;
+      margin: 0 0 50px 0;
+    }
+
+    .to-top
+    header > nav li {
+      /* 인라인 블록으로 한줄로 늘어놓기*/
+      display: inline-block;
+      margin-right: 50px;
+    }
+
+    /* header position holder*/
+    #header-position-holder {
+      height: 52px;
+    }
+
+    .container {
+      width: 655px;
+      height: 2000px;
+      border: 2px solid blue;
+    }
+
+    section {
+      width: 100px;
+      height: 100px;
+      border: 2px solid red;
+    }
+
+    section:nth-of-type(2) {
+      /*relative : 다른 요소를 기준 */
+      position: relative;
+      /*위치지정 좌상단 기준*/
+      top: 150px;
+      left: 150px;
+
+      /*위치지정 우하단 기준*/
+      /*bottom: 150px;*/
+      /*right: 150px;*/
+    }
+
+    section:nth-of-type(3) {
+      /*position: relative;*/
+      /*위치지정 좌상단 기준*/
+      top: 150px;
+      left: 150px;
+
+      /*위치지정 우하단 기준*/
+      bottom: 150px;
+      right: 150px;
+    }
+
+    /* absolute : 화면 기준, 좌상단*/
+    .absolute {
+      position: absolute;
+      top: 150px;
+      left: 150px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <nav>
+      <ul>
+        <li>메인</li>
+        <li>사이트맵</li>
+        <li>게시판</li>
+        <li>로그인</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <div id="header-position-holder">
+    header-position-holder
+  </div>
+
+  <main>
+    <section>
+      <article>아티클 1</article>
+    </section>
+    <section>
+      <article>아티클 2</article>
+    </section>
+    <section>
+      <article>아티클 3</article>
+    </section>
+    <section class="absolute">
+      <article>아티클 4</article>
+    </section>
+  </main>
+  <dic class="to-top">
+    <a href="">위로 올라감</a>
+  </dic>
+</div>
+</body>
+</html>
